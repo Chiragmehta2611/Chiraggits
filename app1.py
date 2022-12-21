@@ -1,8 +1,4 @@
 
-!pip install pyngrok --quiet
-!pip install streamlit-drawable-canvas --quiet
-!pip install protobuf
-from pyngrok import ngrok
 from google.colab import drive
 drive.mount('/content/drive')
 %%writefile app.py
