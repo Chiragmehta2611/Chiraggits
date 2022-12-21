@@ -6,13 +6,14 @@ from PIL import Image
 import requests
 from io import BytesIO
 from pyngrok import ngrok
-
+from google.colab import drive
+drive.mount('/content/drive')
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("Image Classifier - 4 Categories! : Dogs, Cats, Fishes and Flowers")
 
 @st.cache(allow_output_mutation = True)
 def load_model():
-  model = keras.models.load_model(r'C:\Users\Chirag\Dropbox\PC\Downloads\xception_model.hdf5')
+  model = keras.models.load_model(r'/content/drive/MyDrive/AI_PROJECT/xception_model.hdf5')
   return model
 
 with st.spinner('Loading Model into memory......'):
