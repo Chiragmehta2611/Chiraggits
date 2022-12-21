@@ -1,4 +1,4 @@
-!pip install streamlit --quiet
+
 !pip install pyngrok --quiet
 !pip install streamlit-drawable-canvas --quiet
 !pip install protobuf
